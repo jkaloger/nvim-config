@@ -42,3 +42,6 @@ vim.keymap.set('n', '<leader>cl', ':CloakToggle<cr>', { desc = 'Toggle cloak' })
 
 -- [Lazygit]
 vim.keymap.set('n', '<leader>gg', ':LazyGit<cr>', { desc = 'Open LazyGit' })
+
+-- [CSVView]
+vim.keymap.set('n', '<leader>cv', ':CsvViewToggle<cr>', { desc = 'Toggle CSV view' })
