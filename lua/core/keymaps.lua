@@ -45,3 +45,8 @@ vim.keymap.set('n', '<leader>gg', ':LazyGit<cr>', { desc = 'Open LazyGit' })
 
 -- [CSVView]
 vim.keymap.set('n', '<leader>cv', ':CsvViewToggle<cr>', { desc = 'Toggle CSV view' })
+
+-- [Neotest]
+vim.keymap.set('n', '<leader>tr', require("neotest").run.run, { desc = '[T]est [R]un nearest' });
+vim.keymap.set('n', '<leader>tw', require("neotest").watch.toggle, { desc = '[T]est [W]atch toggle' });
+vim.keymap.set('n', '<leader>ts', require("neotest").summary.toggle, { desc = '[T]est [S]ummary toggle' });
