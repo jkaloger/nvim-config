@@ -21,7 +21,6 @@ return {
           vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
         end
         map('grn', vim.lsp.buf.rename, '[R]e[n]ame')
-        map('<C-k>', vim.lsp.buf.signature_help, { silent = true, noremap = true })
         map('gra', vim.lsp.buf.code_action, '[G]oto Code [A]ction', { 'n', 'x' })
         map('grr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
         map('gri', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
