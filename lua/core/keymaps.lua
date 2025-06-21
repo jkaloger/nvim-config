@@ -30,7 +30,9 @@ vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { de
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
 
 -- [Copilot]
-vim.keymap.set('n', '<leader>ai', 'Copilot enable', { desc = 'Enable Copilot' })
+vim.keymap.set('n', '<leader>cd', ':Copilot disable<cr>', { desc = 'Disable Copilot' })
+vim.keymap.set('n', '<leader>ce', ':Copilot enable<cr>', { desc = 'Enable Copilot' })
+vim.keymap.set('n', '<leader>cs', ':Copilot status<cr>', { desc = 'Copilot Status' })
 
 -- [Neotree]
 vim.keymap.set('n', '<leader>o', ':Neotree<cr>', { desc = 'Open neotree' })
