@@ -21,6 +21,8 @@ vim.wo.number = true
 vim.o.termguicolors = true
 vim.o.clipboard = 'unnamedplus'
 vim.o.undofile = true
+vim.o.breakindent = true
+vim.o.completeopt = 'menuone,noselect'
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
