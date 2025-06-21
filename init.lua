@@ -26,9 +26,6 @@ require("lazy").setup("plugins", {
   { import = 'plugins' },
 })
 
--- Setup LSP & Completion
-require("core.lsp")
-
 -- Setup keymaps
 -- (must happen after plugin load)
 require("core.keymaps")
