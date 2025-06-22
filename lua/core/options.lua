@@ -23,6 +23,7 @@ vim.o.clipboard = 'unnamedplus'
 vim.o.undofile = true
 vim.o.breakindent = true
 vim.o.completeopt = 'menuone,noselect'
+vim.o.wrap = true
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
