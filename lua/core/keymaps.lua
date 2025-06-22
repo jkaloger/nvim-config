@@ -1,5 +1,9 @@
 -- Core keymaps
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostics' })
+vim.keymap.set('n', '<leader><CR>', ':ToggleTerm<CR>', { desc = 'Open Terminal Buffer' })
+
+-- Terminal keymaps
+vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
 
 -- Plugin keymaps
 -- [Telescope]
