@@ -31,6 +31,8 @@ require("lazy").setup("plugins", {
 require("core.keymaps")
 
 -- Load colorscheme
-vim.cmd [[colorscheme tokyonight]]
+vim.cmd [[colorscheme kanagawa-dragon]]
+vim.cmd [[highlight SignColumn guibg=NONE]]
+vim.cmd [[highlight LineNr guibg=NONE guifg=#aaaaaa]]
 
 -- vim: ts=2 sts=2 sw=2 et
