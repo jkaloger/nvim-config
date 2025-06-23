@@ -9,13 +9,18 @@ return {
     "marilari88/neotest-vitest",
   },
   config = function()
-    require("neotest").setup({
-      diagnostic = {
-        enabled = true,
-      },
-      adapters = {
-        require("neotest-vitest"),
-      }
-    })
+    require("neotest").setup(
+      {
+        diagnostic = {
+          enabled = true,
+        },
+
+        adapters = {
+          require("neotest-vitest")({
+            vitestCommand = "npx vitest --inspect-brk --no-file-parallelism",
+            env = { NODE_OPTIONS = "--inspect" }
+          })
+        }
+      })
   end
 }
