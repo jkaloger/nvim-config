@@ -54,3 +54,8 @@ vim.keymap.set('n', '<leader>cv', ':CsvViewToggle<cr>', { desc = 'Toggle CSV vie
 vim.keymap.set('n', '<leader>tr', require("neotest").run.run, { desc = '[T]est [R]un nearest' });
 vim.keymap.set('n', '<leader>tw', require("neotest").watch.toggle, { desc = '[T]est [W]atch toggle' });
 vim.keymap.set('n', '<leader>ts', require("neotest").summary.toggle, { desc = '[T]est [S]ummary toggle' });
+
+-- [DAP]
+vim.keymap.set('n', '<leader>db', require('dap').toggle_breakpoint, { desc = '[D]ebug toggle [B]reakpoint' })
+vim.keymap.set('n', '<leader>dc', require('dap').continue, { desc = '[D]ebug [C]ontinue' })
+vim.keymap.set('n', '<leader>di', require('dapui').open, { desc = '[D]ebug User [I]nterface' })
