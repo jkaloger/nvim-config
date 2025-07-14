@@ -4,16 +4,16 @@ return {
   config = function()
     require('conform').setup({
       formatters_by_ft = {
-        javascript = { { "prettierd", "prettier" }, "eslint_d" },
-        typescript = { { "prettierd", "prettier" }, "eslint_d" },
-        typescriptreact = { { "prettierd", "prettier" }, "eslint_d" },
-        javascriptreact = { { "prettierd", "prettier" }, "eslint_d" },
-        astro = { { "prettier" }, "eslint_d" },
-        json = { { "prettierd", "prettier" } },
-        html = { { "prettierd", "prettier" } },
-        css = { { "prettierd", "prettier" } },
-        scss = { { "prettierd", "prettier" } },
-        markdown = { { "prettierd", "prettier" } },
+        javascript = { "prettierd", "eslint_d" },
+        typescript = { "prettierd", "eslint_d" },
+        typescriptreact = { "prettierd", "eslint_d" },
+        javascriptreact = { "prettierd", "eslint_d" },
+        astro = { "prettier", "eslint_d" },
+        json = { "prettierd" },
+        html = { "prettierd" },
+        css = { "prettierd" },
+        scss = { "prettierd" },
+        markdown = { "prettierd" },
       },
       format_on_save = {
         -- These options will be passed to conform.format()
