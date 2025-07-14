@@ -54,3 +54,4 @@ vim.keymap.set('n', '<leader>cv', ':CsvViewToggle<cr>', { desc = 'Toggle CSV vie
 vim.keymap.set('n', '<leader>tr', require("neotest").run.run, { desc = '[T]est [R]un nearest' });
 vim.keymap.set('n', '<leader>tw', require("neotest").watch.toggle, { desc = '[T]est [W]atch toggle' });
 vim.keymap.set('n', '<leader>ts', require("neotest").summary.toggle, { desc = '[T]est [S]ummary toggle' });
+vim.keymap.set('n', '<leader>tc', require("neotest").output_panel.toggle, { desc = '[T]est [C]onsole' });
