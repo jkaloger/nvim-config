@@ -7,3 +7,6 @@
     Jack's neovim config, written in lua 🌙
   </p>
 </p>
+
+> [!NOTE]
+> Archived in favour of [jkaloger/dotfiles](https://github.com/jkaloger/dotfiles)
