@@ -6,6 +6,7 @@ vim.g.maplocalleader = " "
 
 -- Load core configuration
 require("core.options")
+require("core.macros")
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -31,7 +32,7 @@ require("lazy").setup("plugins", {
 require("core.keymaps")
 
 -- Load colorscheme
-vim.cmd [[colorscheme kanagawa-dragon]]
+vim.cmd [[colorscheme kanagawa]]
 vim.cmd [[highlight SignColumn guibg=NONE]]
 vim.cmd [[highlight LineNr guibg=NONE guifg=#aaaaaa]]
 

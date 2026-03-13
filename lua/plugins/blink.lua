@@ -33,6 +33,7 @@ return {
 
     completion = {
       documentation = { auto_show = true, auto_show_delay_ms = 500 },
+      trigger = { prefetch_on_insert = false }
     },
 
     sources = {

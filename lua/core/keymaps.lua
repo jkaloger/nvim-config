@@ -32,11 +32,14 @@ vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { de
 vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
+vim.keymap.set('n', '<leader>sc', require('telescope.builtin').git_status, { desc = '[S]earch [C]onflicts' })
 
 -- [Copilot]
 vim.keymap.set('n', '<leader>cd', ':Copilot disable<cr>', { desc = 'Disable Copilot' })
 vim.keymap.set('n', '<leader>ce', ':Copilot enable<cr>', { desc = 'Enable Copilot' })
 vim.keymap.set('n', '<leader>cs', ':Copilot status<cr>', { desc = 'Copilot Status' })
+
+-- vim.keymap.set('n', '<leader>y', require('minuet').make_blink_map)
 
 -- [Neotree]
 vim.keymap.set('n', '<leader>o', ':Neotree<cr>', { desc = 'Open neotree' })
@@ -55,3 +58,6 @@ vim.keymap.set('n', '<leader>tr', require("neotest").run.run, { desc = '[T]est [
 vim.keymap.set('n', '<leader>tw', require("neotest").watch.toggle, { desc = '[T]est [W]atch toggle' });
 vim.keymap.set('n', '<leader>ts', require("neotest").summary.toggle, { desc = '[T]est [S]ummary toggle' });
 vim.keymap.set('n', '<leader>tc', require("neotest").output_panel.toggle, { desc = '[T]est [C]onsole' });
+
+-- [TreeSJ]
+vim.keymap.set('n', '<leader>cas', ':TSJJoin<cr>', { desc = '[C]ode [A]rray [S]plit' });

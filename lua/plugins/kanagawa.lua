@@ -5,7 +5,7 @@ return {
   config = function()
     require('kanagawa').setup({
       transparent = true,
-      theme = "dragon"
+      theme = "wave"
     })
   end
 }
